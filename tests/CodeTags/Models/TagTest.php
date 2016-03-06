@@ -7,7 +7,8 @@ use CodePress\CodeTags\Tests\AbstractTestCase;
 
 class TagTest extends AbstractTestCase{
     public function setUp(){
-
+        parent::setUp();
+        $this->migrate();
     }
 
     public function test_tag_persisted(){
