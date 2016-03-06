@@ -13,7 +13,7 @@ class TagTest extends AbstractTestCase{
 
     public function test_tag_persisted(){
         $tag = Tag::create(['name'=>'first']);
-        $this->assertFileEquals('first', $tag->name);
+        $this->assertEquals('first', $tag->name);
 
         $tag = Tag::all()->first();
         $this->assertEquals('first', $tag->name);
