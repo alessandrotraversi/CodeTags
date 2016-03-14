@@ -10,7 +10,7 @@ class CreateCodeTagsTable
            $table->increments('id');
             $table->string('name');
             $table->string('slug');
-            $table->timestamp();
+            $table->timestamps();
         });
     }
 
